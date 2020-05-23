@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">nombre</th>
+            <th scope="col">apellido</th>
+            <th scope="col">run</th>
+            <th scope="col">nacimiento</th>
+            <th scope="col">edad</th>
+          </tr>
+        </thead>
+        <tbody id="app">
+          <tr>
+            <th >1</th>
+            <td>{{usuarios[0].nombre}}</td>
+            <td>{{usuarios[0].apellido}}</td>
+            <td>{{usuarios[0].run}}</td>
+            <td>{{usuarios[0].nacimiento}}</td>
+            <td>{{usuarios[0].edad}}</td>
+          </tr>
+          <tr>
+            <th >2</th>
+            <td>{{usuarios[1].nombre}}</td>
+            <td>{{usuarios[1].apellido}}</td>
+            <td>{{usuarios[1].run}}</td>
+            <td>{{usuarios[1].nacimiento}}</td>
+            <td>{{usuarios[1].edad}}</td>
+          </tr>
+          <tr>
+            <th >3</th>
+            <td>{{usuarios[2].nombre}}</td>
+            <td>{{usuarios[2].apellido}}</td>
+            <td>{{usuarios[2].run}}</td>
+            <td>{{usuarios[2].nacimiento}}</td>
+            <td>{{usuarios[2].edad}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+<script>
+
+const app = new Vue(  {
+    el:'#app',
+    data:{
+        usuarios:[
+            {
+                nombre:'raul',
+                apellido:'catalan',
+                run : '1234567',
+                nacimiento: '09/11/95',
+                edad:25,
+            },
+            {
+                nombre:'juan',
+                apellido:'perez',
+                run : '1234567',
+                nacimiento:'23/11/95',
+                edad:21,
+            },
+            {
+                nombre:'francisco',
+                apellido:'catalan',
+                run : '1234567',
+                nacimiento: '07/10/90',
+                edad:26,
+            }
+            ]
+    }
+})
+
+</script>
+
+</body>
+</html>
